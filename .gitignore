@@ -1,0 +1,5 @@
+.idea/
+bin/
+pkg/generated/
+vendor/
+zz_generated.deepcopy.go

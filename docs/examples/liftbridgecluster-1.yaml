@@ -1,0 +1,17 @@
+apiVersion: liftbridge.io/v1alpha1
+kind: LiftbridgeCluster
+metadata:
+  name: liftbridgecluster-1
+spec:
+  logLevel: debug
+  nats:
+    servers:
+    - nats://nats-1.default.svc
+  paused: false
+  replicas: 3
+  storage:
+    sizeGB: 10
+    storageClassName: ssd
+  tls:
+    secretName: liftbridgecluster-1-tls
+  version: 0.0.0-dev
